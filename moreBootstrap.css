@@ -1,3 +1,7 @@
 .jumbotron-bg-cover {
     background: url('johnAndAliceColtrane.png') no-repeat center center;
 }
+
+h1, .lead{
+    justify-content: center;
+}
