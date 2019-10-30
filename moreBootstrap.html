@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to have a great display
+
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+IMPORTANT:
+Start from the previous assignment
+
+NOTE:
+Most of the time, even the most expert of designers, need inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotity or Apple music way or some other blog out there.
+-->
+
+    <title>Jukebox</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="moreBootstrap.css"> 
+
+    </head> 
+    
+    <body>
+    <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">A Minimalist's Music List</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tracks</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Tracks</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Staff Picks</li>
+        </ol>
+    </nav>
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+    <div class="jumbotron bg-cover">
+        <h1 class="display-3">Jukebox</h1>
+        <p class="lead">Tracks to play over and over</p>
+        <hr class="my-2">
+        <p>Staff Picks</p>
+        <!-- EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge-->
+        <span class="badge badge-pill badge-primary">Journey in Satchidananda</span>
+        <span class="badge badge-pill badge-secondary">Koyaanisqatsi</span>
+        <span class="badge badge-pill badge-success">Ancient Methods</span>
+        <span class="badge badge-pill badge-danger">Trois Gymnopedies</span>
+        <span class="badge badge-pill badge-warning">Different Trains</span>
+        <span class="badge badge-pill badge-info">Ø Radio</span>
+        <span class="badge badge-pill badge-light">Muslimgauze</span>
+        <span class="badge badge-pill badge-dark">Suwa Devi Kálbelya</span>
+    </div>
+
+
+    <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Alice Coltrane. Journey in Satchidananda</p>
+        </div>
+        <img class="col-12 col-sm-6 col-lg-3 my-3" src="imgs/alicecoltrane.png" alt="Card image">
+       
+
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Koyaanisqatsi</p>
+        </div>
+        <img class="col-12 col-sm-6 col-lg-3 my-3" src="imgs/philipglass.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Philip Glass</p>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Ancient Methods</p>
+        </div>
+        <img class="col-12" src="imgs/ancientmethods.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Untitled.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Trois Gymnopedies</p>
+        </div>
+        <img src="/images/pathToYourImage.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Eric Satie</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Different Trains</p>
+        </div>
+        <img src="/images/pathToYourImage.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Steve Reich. Kronos Quartet.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Ø Radio</p>
+        </div>
+        <img src="/images/pathToYourImage.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Sähkö Recordings - SÄHKÖ-006</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Muslimguaze</p>
+        </div>
+        <img src="/images/pathToYourImage.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">of a card.</p>
+        </div>
+    </div>
+
+    <img src="/images/pathToYourImage.png" alt="Card image">
+    <div class="card-body">
+        <p class="card-text">Suwa Devi Kálbelya</p>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Kaman Song</p>
+        </div>
+        <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+
+        <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist.
+            Clicking on the button the row must disappear
+        -->
+
+        <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+
+        <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+
+        <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album
+        -->
+
+        <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track lenght
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+        <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            https://getbootstrap.com/docs/4.3/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+        <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+        <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+        <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+        <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+        <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        </body>
+
+</html>
+<!DOCTYPE html>
