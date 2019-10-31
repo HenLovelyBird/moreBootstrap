@@ -72,15 +72,14 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
         <p>Staff Picks</p>
         <!-- EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge-->
         <span class="badge badge-pill badge-primary mx-2">Journey in Satchidananda</span>
-        <span class="badge badge-pill badge-secondary">Koyaanisqatsi</span>
-        <span class="badge badge-pill badge-success">Ancient Methods</span>
-        <span class="badge badge-pill badge-danger">Trois Gymnopedies</span>
-        <span class="badge badge-pill badge-warning">Different Trains</span>
-        <span class="badge badge-pill badge-info">Ø Radio</span>
-        <span class="badge badge-pill badge-light">Muslimgauze</span>
-        <span class="badge badge-pill badge-dark">Suwa Devi Kálbelya</span>
+        <span class="badge badge-pill badge-secondary mx-2">Koyaanisqatsi</span>
+        <span class="badge badge-pill badge-success mx-2">Ancient Methods</span>
+        <span class="badge badge-pill badge-danger mx-2">Trois Gymnopedies</span>
+        <span class="badge badge-pill badge-warning mx-2">Different Trains</span>
+        <span class="badge badge-pill badge-info mx-2">Ø Radio</span>
+        <span class="badge badge-pill badge-light mx-2">Muslimgauze</span>
+        <span class="badge badge-pill badge-dark mx-2">Suwa Devi Kálbelya</span>
     </div>
-
 
     <!-- EXERCISE 4
             Foreach album in the favorite list, use the Bootstrap Card to contain it.
@@ -126,13 +125,77 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
         <img class="card-img-top" src="imgs/kamansong.png" alt="Card image cap">
         <div class="card-body"> Suwa Devi Kálbelya. Kaman Song.</div>
     </div>
-</div>        
+</div>    
+<!--Add Disintegration Loops-->
+
+
     <!-- EXERCISE 5
             Place the tracklist inside a Bootstrap table.
             The row column must be alternate.
             Use one column for the track order, one of the title and one for the length.
             (If you want, you can also add extra columns)
         -->
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Track Order</th>
+                <th>Title</th>
+                <th>Length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-dark">
+                <th scope="row">1</th>
+                <td>Journey In Satchidananda</td>
+                <td>"11:32"</td>
+                <td class="end">
+                    <div class="btn-group btn-group-toggle mx-auto" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="checkbox" checked autocomplete="off">Listen
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="checkbox" autocomplete="off">Remove From List
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Koyaanisqatsi</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">3</th>
+                <td>Azzazin</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Ancient Methods</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">5</th>
+                <td>Trois Gymnopedies</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Different Trains</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">7</th>
+                <td>Ø</td>
+                <td>"11:32"</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>The Disintegration Loops</td>
+                <td>"11:32"</td>
+              </tr>
+            </tbody>
+          </table>
 
     <!-- EXERCISE 6
             Add a DELETE bootstrap button on each row of the tracklist.
@@ -206,7 +269,9 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script>
+    window.onclick(mousevent)   
+    </script>
 </body>
 
 </html>

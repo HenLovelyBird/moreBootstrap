@@ -5,3 +5,7 @@
 h1, .lead{
     justify-content: center;
 }
+
+body{
+    background-color: aqua;
+}
